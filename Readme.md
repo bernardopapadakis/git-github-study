@@ -39,3 +39,7 @@ Códigos:
 - Ver mudanças antes de commitar: git diff
 
 - Ver nome do arquivo que foi modificado: git diff --name-only
+
+- Desfazer ultima mudança antes de commitar: git checkout nomedoarquivo.tipodoarquivo
+
+- Como apagar uma mudança de um arquivo que foi adicionada: git reset HEAD nomedoarquivo.tipodoarquivo

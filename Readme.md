@@ -35,3 +35,7 @@ Códigos:
 - Ver de forma gráfica o que está acontecendo branch's: git log --graph
 
 - Ver as modificações de um commit específico: git show códigodocommit
+
+- Ver mudanças antes de commitar: git diff
+
+- Ver nome do arquivo que foi modificado: git diff --name-only

@@ -6,7 +6,7 @@ Este é um repositório teste para aprender a usar Git e Github.
 
 OBS: quando for usar um código que tiver (), ignore os () e escreva o que estiver dentro dele, da seguinte forma, se estiver escrito (arquivo) escreva o nome do arquivo de verdade, como exemplo Readme.md.
 
-## Códigos:
+## Códigos GIT:
 
 ### Configurações
     - Configurar seu nome: git config --global user.name "(seu nome)"

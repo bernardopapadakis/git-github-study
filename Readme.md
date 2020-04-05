@@ -61,4 +61,3 @@ OBS: quando for usar um código, e algo estiver entre ( ), ignore os ( ) e escre
     
     - git reset --hard (código do commit)` // voltar o commit e apagar os comit's, os arquivo adicionados no repositório local e as mudanças nos arquivos a partir dele
 
-## Conectando com o Github

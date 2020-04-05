@@ -21,3 +21,17 @@ Códigos:
 - Adicionar um arquivo: git add seuarquivo.tipodele
 
 - Comitar: git commit -m "Comentário do commit"
+
+- Ver todos os commit's: git log
+
+- Ver os commit's com mais informações: git log --decorate
+
+- Filtrar para ver os commit's de um certa pessoa: git log --author="nomedoautor"
+
+- Ver  em ordem alfabetica, todas pessoas que fizeram commit's, quantos commit's, e quais : git shortlog
+
+- Ver a quantidades de commit's de cada pessoa: git shortlog -
+
+- Ver de forma gráfica o que está acontecendo branch's: git log --graph
+
+- Ver as modificações de um commit específico: git show códigodocommit

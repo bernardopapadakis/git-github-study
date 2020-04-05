@@ -4,55 +4,61 @@ Arquivo da aula de Git e Github para iniciantes.
 
 Este é um repositório teste para aprender a usar Git e Github.
 
-OBS: quando for usar um código que tiver (), ignore os () e escreva o que estiver dentro dele, da seguinte forma, se estiver escrito (arquivo) escreva o nome do arquivo de verdade, como exemplo Readme.md.
+OBS: quando for usar um código, e algo estiver entre ( ), ignore os ( ) e escreva o significado do que estiver escrito, da seguinte forma, se estiver escrito (arquivo) escreva o nome do arquivo de verdade, como exemplo Readme.md.
 
 ## Códigos GIT:
 
 ### Configurações
-    - Configurar seu nome: git config --global user.name "(seu nome)"
+    - git config --global user.name "(seu nome)" // configurar seu nome
 
-    - Configurar seu e-mail: git config --global user.email "(seu email)"
+    - git config --global user.email "(seu email)" // configurar seu e-mail
 
-    - Configurar editor: git config --global core.editor (seu editor preferido)
+    - git config --global core.editor (seu editor preferido) // configurar editor
 
-    - Listar configurações: git config --list
+    - git config --list // listar configurações
 
 ### Repositório local
 
-    - Criar um repositório local: git init
+    - git init // criar um repositório local 
 
-    - Verificar status dos arquivos: git status
+    - git status // verificar status dos arquivos 
 
-    - Adicionar um arquivo: git add (arquivo)
+    - git add (arquivo) // adicionar um arquivo 
 
-    - Comitar: git commit -m "(comentário do commit)"
+    - git commit -m "(comentário do commit)" // comitar 
 
 ### Logs
 
-    - Ver todos os commit's: git log
+    - git log // ver todos commit's
 
-    - Ver os commit's com mais informações: git log --decorate
+    - git log --decorate // ver todos commit's com mais informações
 
-    - Filtrar para ver os commit's de um certa pessoa: git log --author="(nome da pessoa)"
+    - git log --author="(nome da pessoa)" // filtrar para ver os commit's de um certa pessoa
 
-    - Ver  em ordem alfabetica, todas pessoas que fizeram commit's, quantos commit's, e quais : git shortlog
+    - git shortlog // ver em ordem alfabetica, todas pessoas que fizeram commit's, quantos commit's, e quais 
 
-    - Ver a quantidades de commit's de cada pessoa: git shortlog -sn
+    -  git shortlog -sn // ver a quantidades de commit's de cada pessoa
 
-    - Ver de forma gráfica o que está acontecendo branch's: git log --graph
+    - git log --graph // ver de forma gráfica o que está acontecendo nas branch's
 
-    - Ver as modificações de um commit específico: git show (código do commit)
+    - git show (código do commit) // ver as modificações de um commit específico
 
 ### Diff
 
-    - Ver mudanças antes de commitar: git diff
+    - git diff // ver mudanças antes de commitar 
 
-    - Ver nome do arquivo que foi modificado: git diff --name-only
+    - git diff --name-only // ver nome do arquivo que foi modificado 
 
 ### Desfazendo coisas
 
-    - Desfazer ultima mudança antes de commitar: git checkout (arquivo)
+    - git checkout (arquivo) // desfazer última mudança antes de adicionar arquivo no repositório local
 
-    - Apagar uma mudança de um arquivo que foi adicionado: git reset HEAD (arquivo)
+    - git reset HEAD (arquivo) // desfazer última mudança de um arquivo que foi adicionado no repositório local
 
-    - Como voltar para um commit e apagar os commit's depois dele: git reset --soft (código do commit) / git reset --mixed (código do commit) / git reset --hard (código do commit) // o reset apaga somente o commit, o mixed apaga o commit e o arquivo do repositório, e o hard apaga o commit, o arquivo do repositório e as mudanças no arquivo
+    - git reset --soft (código do commit)` // voltar para um commit e apagar os commit's a partir dele 
+    
+    - git reset --mixed (código do commit) // voltar para um commit e apagar os commit's e mudanças adicionadas no repostório local a partir dele
+    
+    - git reset --hard (código do commit)` // voltar o commit e apagar os comit's, os arquivo adicionados no repositório local e as mudanças nos arquivos a partir dele
+
+## Conectando com o Github

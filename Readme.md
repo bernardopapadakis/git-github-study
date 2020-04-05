@@ -1,45 +1,58 @@
-#Github Course
+# Github Course
 
 Arquivo da aula de Git e Github para iniciantes.
 
 Este é um repositório teste para aprender a usar Git e Github.
 
-Códigos:
+OBS: quando for usar um código que tiver (), ignore os () e escreva o que estiver dentro dele, da seguinte forma, se estiver escrito (arquivo) escreva o nome do arquivo de verdade, como exemplo Readme.md.
 
-- Configurar seu nome: git config --global user.name "Seu nome"
+## Códigos:
 
-- Configurar seu e-mail: git config --global user.email "seuemail@gmail.com"
+### Configurações
+    - Configurar seu nome: git config --global user.name "(seu nome)"
 
-- Configurar editor: git config --global core.editor seueditor
+    - Configurar seu e-mail: git config --global user.email "(seu email)"
 
-- Listar configurações: git config --list
+    - Configurar editor: git config --global core.editor (seu editor preferido)
 
-- Criar um repositório local: git init
+    - Listar configurações: git config --list
 
-- Verificar status dos arquivos: git status
+### Repositório local
 
-- Adicionar um arquivo: git add seuarquivo.tipodele
+    - Criar um repositório local: git init
 
-- Comitar: git commit -m "Comentário do commit"
+    - Verificar status dos arquivos: git status
 
-- Ver todos os commit's: git log
+    - Adicionar um arquivo: git add (arquivo)
 
-- Ver os commit's com mais informações: git log --decorate
+    - Comitar: git commit -m "(comentário do commit)"
 
-- Filtrar para ver os commit's de um certa pessoa: git log --author="nomedoautor"
+### Logs
 
-- Ver  em ordem alfabetica, todas pessoas que fizeram commit's, quantos commit's, e quais : git shortlog
+    - Ver todos os commit's: git log
 
-- Ver a quantidades de commit's de cada pessoa: git shortlog -
+    - Ver os commit's com mais informações: git log --decorate
 
-- Ver de forma gráfica o que está acontecendo branch's: git log --graph
+    - Filtrar para ver os commit's de um certa pessoa: git log --author="(nome da pessoa)"
 
-- Ver as modificações de um commit específico: git show códigodocommit
+    - Ver  em ordem alfabetica, todas pessoas que fizeram commit's, quantos commit's, e quais : git shortlog
 
-- Ver mudanças antes de commitar: git diff
+    - Ver a quantidades de commit's de cada pessoa: git shortlog -sn
 
-- Ver nome do arquivo que foi modificado: git diff --name-only
+    - Ver de forma gráfica o que está acontecendo branch's: git log --graph
 
-- Desfazer ultima mudança antes de commitar: git checkout nomedoarquivo.tipodoarquivo
+    - Ver as modificações de um commit específico: git show (código do commit)
 
-- Como apagar uma mudança de um arquivo que foi adicionada: git reset HEAD nomedoarquivo.tipodoarquivo
+### Diff
+
+    - Ver mudanças antes de commitar: git diff
+
+    - Ver nome do arquivo que foi modificado: git diff --name-only
+
+### Desfazendo coisas
+
+    - Desfazer ultima mudança antes de commitar: git checkout (arquivo)
+
+    - Apagar uma mudança de um arquivo que foi adicionado: git reset HEAD (arquivo)
+
+    - Como voltar para um commit e apagar os commit's depois dele: git reset --soft (código do commit) / git reset --mixed (código do commit) / git reset --hard (código do commit) // o reset apaga somente o commit, o mixed apaga o commit e o arquivo do repositório, e o hard apaga o commit, o arquivo do repositório e as mudanças no arquivo

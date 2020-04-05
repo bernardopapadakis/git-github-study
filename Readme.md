@@ -19,3 +19,5 @@ Códigos:
 - Verificar status dos arquivos: git status
 
 - Adicionar um arquivo: git add seuarquivo.tipodele
+
+- Comitar: git commit -m "Comentário do commit"

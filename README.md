@@ -1,29 +1,41 @@
 # Códigos GIT
 
-Este é um repositório com todos os códigos que eu sei e aprendi por meio de cursos, leituras e estudo no geral.
+Este é um repositório com os principais e mais importantes códigos que eu sei e aprendi por meio de cursos, leituras e estudo.
 
-## Configurações
+## Configurações locais
 
-```git config --global user.name <seu_nome>```// configurar seu nome
+### Verificar configurações locais
 
-```git config --global user.email <seu_email>``` // configurar seu e-mail
+```git config --list ```// listar todas configurações
 
-```git config --global core.editor <seu_editor>```// configurar editor
+```git config --global user.name ```// verificar o usuário
 
-```git config --list ```// listar configurações
+```git config --global user.email```// verificar email
 
-# Repositório local
+### Alterar configurações locais
+
+```git config --global user.name "<seu_nome>"```// configurar seu nome
+
+```git config --global user.email "<seu_email>"``` // configurar seu e-mail
+
+```git config --global core.editor "<seu_editor>"```// configurar seu editor
+
+## Repositório local
 
 
 ```git init```// criar um repositório local 
 
+```git clone <url_do_repositório>```// clonar um repositório
+
 ```git status```// verificar status dos arquivos 
 
-```git add <nome_do_arquivo>```// adicionar um arquivo
+```git add <nome_do_arquivo>```// adicionar arquivo para ser comitado
 
-```git commit -m "<comentário>"```// comitar 
+```git add .```// adicionar todas mudanças de uma vez
 
-# Logs
+```git commit -m "<comentário_do_commiti>"```// comitar 
+
+## Logs
 
 
 ```git log```// ver todos commit's
@@ -40,22 +52,36 @@ Este é um repositório com todos os códigos que eu sei e aprendi por meio de c
 
 ```git show <código_do_commit>```// ver as modificações de um commit específico
 
-# Diff
+## Diff
 
 
 ```git diff ```// ver mudanças antes de commitar 
 
 ```git diff --name-only ```// ver nome do arquivo que foi modificado
 
-# Desfazendo coisas
+## Desfazendo coisas
 
 
-```git checkout <nome_do_arquivo> ```// desfazer última mudança antes de adicionar arquivo no repositório local
+```git checkout <nome_do_arquivo> ```// desfazer última mudança antes de adicionar arquivo em staged
 
-```git reset HEAD <nome_do_arquivo> ```// desfazer última mudança de um arquivo que foi adicionado no repositório local
+```git reset HEAD <nome_do_arquivo> ```// remover arquivo do staged
 
-```git reset --soft <código_do_commit> ```// voltar para um commit e apagar os commit's a partir dele 
+```git reset --soft <hash_do_commit>> ```// voltar para um commit e apagar os commit's a partir dele 
 
-```git reset --mixed <código_do_commit> ```// voltar para um commit e apagar os commit's e mudanças adicionadas no repostório local a partir dele
+```git reset --mixed <hash_do_commit>> ```// voltar para um commit, apagar os commit's e arquivos em staged a partir dele
 
-```git reset --hard <código do commit> ```// voltar o commit e apagar os comit's, os arquivo adicionados no repositório local e as mudanças nos arquivos a partir del 
+```git reset --hard <hash_do_commit>> ```// voltar para um commit, apagar os comit's, os arquivo em staged e as mudanças nos arquivos a partir dele
+
+```git revert <5_primeiros_caracteres_do_hash_do_commit>```// apagar um commit específico 
+
+## Repositórios remotos
+
+```git remote add origin <url_do_repositório>```// conectar repositório local com repositório remoto
+
+```git push -u <repositório> <branch>```// enviar arquivos, logs e todas configurações do repositório local para o remoto
+
+```git pull -u <repositório> <branch>```// baixar os arquivos, logs e todas configurações do repositório remoto para o repositório local
+
+```git remote -v```// ver caminho do servidor
+
+```git remote set-url origin <url_do_repositório>```// adicionar/alterar o caminho do servidor

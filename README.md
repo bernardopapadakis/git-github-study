@@ -1,8 +1,6 @@
-# Github Course
+# Códigos GIT
 
-Arquivo da aula de Git e Github para iniciantes.
-
-Este é um repositório teste para aprender a usar Git e Github.
+Este é um repositório com todos os códigos que eu sei e aprendi por meio de cursos, leituras e estudo no geral.
 
 ## Configurações
 

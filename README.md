@@ -46,6 +46,7 @@ Este é um repositório teste para aprender a usar Git e Github.
 
 
 ```git diff ```// ver mudanças antes de commitar 
+
 ```git diff --name-only ```// ver nome do arquivo que foi modificado
 
 # Desfazendo coisas
